@@ -18,13 +18,13 @@ import com.jdbcexample.domain.PostCrud;
 public class Controllers {
 
 	
-	
 	PostCrud postCrud;
 	
-	@RequestMapping("")
+	@RequestMapping("/")
 	public String pocetnaStranica(Model model) {
 		postCrud = new PostCrud();
 		model.addAttribute("posts", postCrud.Ucitaj());
+		System.out.println("Pozz");
 		return "posts/list";
 	}
 	

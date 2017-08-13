@@ -9,9 +9,9 @@ public class Post {
 		id = int1;
 		message = string;
 	}
-
+//
 	public Post() {
-		
+		//
 	}
 
 	public int getId() {
